@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>PelajarKu - Satu Website untuk Semua Kebutuhan Pelajar</title>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;700&family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<nav><div class="wrap nav">
+<a class="logo" href="#beranda">📘 PelajarKu</a>
+<div class="tabs" role="tablist"><button data-p="beranda" class="on">Beranda</button><button data-p="materi">Materi</button><button data-p="tugas">Tugas</button><button data-p="jadwal">Jadwal</button><button data-p="kuis">Kuis</button><button data-p="perpustakaan">Perpustakaan</button><button data-p="beasiswa">Beasiswa</button><button data-p="profil">Profil</button></div>
+<input class="in gs" id="gs" placeholder="Cari materi..." aria-label="Cari materi">
+<button class="ic" id="tg" aria-label="Ganti mode terang/gelap">🌓</button>
+</div></nav>
+<dialog id="dlg"></dialog>
+<section class="page on" id="beranda"><header class="hero"><div class="wrap">
+<div>
+<span class="hi">Selamat datang di PelajarKu!</span>
+<h1>Belajar Lebih Mudah Bersama <span>PelajarKu</span></h1>
+<p>Kelola tugas, pelajari materi, ikuti kuis, dan tingkatkan prestasimu dalam satu platform.</p>
+<div class="btns"><a class="btn p" href="#materi">🚀 Mulai Belajar</a><a class="btn s" href="#materi">📖 Lihat Materi</a></div>
+</div>
+<div class="scene">
+<svg viewBox="0 0 560 340" aria-label="Empat pelajar di depan sekolah" role="img">
+<rect x="150" y="40" width="400" height="200" fill="#f6d9b0"/><rect x="130" y="30" width="440" height="36" fill="#e9b98a"/>
+<text x="350" y="58" text-anchor="middle" font-family="Baloo 2" font-weight="700" font-size="20" fill="#0b2a6f">SMP / SMA</text>
+<g fill="#7fb6ea"><rect x="190" y="110" width="50" height="60"/><rect x="290" y="110" width="50" height="60"/><rect x="390" y="110" width="50" height="60"/><rect x="480" y="110" width="50" height="60"/></g>
+<rect x="0" y="250" width="560" height="90" fill="#b9dcf7"/>
+<g id="p"><rect x="0" y="0" width="0" height="0"/></g>
+<g transform="translate(90 70)"><circle cx="45" cy="45" r="32" fill="#f3c9a0"/><path d="M12 42q8-38 66-8q6 14 0 12q-30-12-66-4z" fill="#1d1d2b"/><rect x="0" y="80" width="90" height="190" rx="30" fill="#fff"/><rect x="38" y="80" width="14" height="80" fill="#0b2a6f"/><rect x="8" y="190" width="74" height="80" fill="#3a4a7a"/></g>
+<g transform="translate(200 60)"><circle cx="45" cy="50" r="32" fill="#f3c9a0"/><path d="M8 60q-6-58 37-56q43-2 37 56q-10-30-37-30t-37 30z" fill="#fff"/><rect x="0" y="86" width="90" height="184" rx="30" fill="#fff"/><rect x="8" y="196" width="74" height="74" fill="#3a4a7a"/><rect x="18" y="130" width="54" height="40" rx="4" fill="#c2485d"/></g>
+<g transform="translate(310 55)"><circle cx="45" cy="45" r="32" fill="#f3c9a0"/><path d="M12 42q8-42 66-6q6 14 0 12q-30-14-66-6z" fill="#1d1d2b"/><rect x="0" y="80" width="95" height="190" rx="30" fill="#fff"/><rect x="40" y="80" width="14" height="80" fill="#0b2a6f"/><rect x="10" y="190" width="75" height="80" fill="#3a4a7a"/><rect x="20" y="130" width="56" height="42" rx="4" fill="#1e7a6b"/></g>
+<g transform="translate(420 75)"><circle cx="45" cy="45" r="32" fill="#f3c9a0"/><path d="M10 50q-8-52 35-50q43-2 35 50q-6-28-35-28t-35 28z" fill="#241a24"/><rect x="0" y="80" width="90" height="190" rx="30" fill="#fff"/><rect x="38" y="80" width="14" height="80" fill="#0b2a6f"/><rect x="8" y="190" width="74" height="80" fill="#3a4a7a"/><rect x="16" y="132" width="56" height="42" rx="4" fill="#f2b33d"/></g>
+<g fill="#0b2a6f"><circle cx="135" cy="115" r="3"/><circle cx="155" cy="115" r="3"/><circle cx="335" cy="100" r="3"/><circle cx="355" cy="100" r="3"/><circle cx="445" cy="120" r="3"/><circle cx="465" cy="120" r="3"/><circle cx="245" cy="110" r="3"/><circle cx="265" cy="110" r="3"/></g>
+</svg>
+<div class="note">Rajin Belajar<br>Raih Mimpi! ☺</div>
+</div>
+</div></header><div class="wrap">
+<section class="grid top">
+<div class="card greet">
+<div class="row"><span class="av">🧑</span><div><h2 id="hG" style="font-size:22px">Halo, Adika! 👋</h2><div>Siap belajar hari ini?</div><small id="hK" style="color:var(--mut)">Kelas 10 • SMP Negeri 1</small></div></div>
+<div><div style="display:flex;justify-content:space-between;font-weight:700;font-size:13px;margin-bottom:6px"><span>Progres Belajar</span><span id="hP">68%</span></div><div class="bar"><i id="hB"></i></div></div>
+</div>
+<div class="card grid stats">
+<div class="stat s1"><span>📝</span><small>Tugas Belum Selesai</small><b id="hT">3</b><a href="#tugas">Lihat Tugas →</a></div>
+<div class="stat s2"><span>📅</span><small>Jadwal Hari Ini</small><b id="hJ">5</b><a href="#jadwal">Lihat Jadwal →</a></div>
+<div class="stat s3"><span>🏅</span><small>Nilai Kuis Terakhir</small><b id="hQ">85</b><a href="#kuis">Lihat Detail →</a></div>
+<div class="stat s4"><span>📖</span><small>Materi Dipelajari</small><b id="hM">2</b><a href="#materi">Lihat Materi →</a></div>
+</div>
+</section>
+
+<section class="card" style="margin-top:18px">
+<div class="sec-h"><div><h2>📘 Mata Pelajaran</h2><small style="color:var(--mut)">Pilih mata pelajaran yang ingin kamu pelajari</small></div><a href="#materi">Lihat Semua →</a></div>
+<div class="subj">
+<a class="sj" href="#materi" data-f="Matematika"><i style="background:#4f86f0">🧮</i>Matematika</a>
+<a class="sj" href="#materi" data-f="IPA"><i style="background:#37a95c">🧪</i>IPA</a>
+<a class="sj" href="#materi" data-f="IPS"><i style="background:#f59a23">🌍</i>IPS</a>
+<a class="sj" href="#materi" data-f="Bahasa Indonesia"><i style="background:#ef5b5b">📖</i>Bahasa Indonesia</a>
+<a class="sj" href="#materi" data-f="Bahasa Inggris"><i style="background:#8b5cf6">🔤</i>Bahasa Inggris</a>
+<a class="sj" href="#materi" data-f="PPKn"><i style="background:#14a89a">🦅</i>PPKn</a>
+<a class="sj" href="#materi" data-f="Informatika"><i style="background:#3b4fb8">💻</i>Informatika</a>
+<a class="sj" href="#materi" data-f="Pendidikan Agama"><i style="background:#f2b01e">🕌</i>Pendidikan Agama</a>
+</div>
+</section>
+
+<section class="grid bot">
+<div class="card">
+<div class="sec-h"><h2 style="font-size:18px">⭐ Materi Terpopuler</h2><a href="#materi">Lihat Semua →</a></div>
+<a class="li" href="#materi" data-m="0"><i style="background:#dcebff">🧮</i><span><b>Persamaan Linear Dua Variabel</b><small>Matematika</small></span><span class="go">›</span></a>
+<a class="li" href="#materi" data-m="1"><i style="background:#dcf5e3">🧪</i><span><b>Sistem Pernafasan Manusia</b><small>IPA</small></span><span class="go">›</span></a>
+<a class="li" href="#materi" data-m="2"><i style="background:#ffeacc">🌍</i><span><b>Proklamasi Kemerdekaan Indonesia</b><small>IPS</small></span><span class="go">›</span></a>
+<a class="li" href="#materi" data-m="3"><i style="background:#ffe0e0">📖</i><span><b>Teks Deskripsi</b><small>Bahasa Indonesia</small></span><span class="go">›</span></a>
+</div>
+
+<div class="card">
+<div class="sec-h"><div><h2 style="font-size:18px">🎯 Kegiatan Belajar</h2><small style="color:var(--mut)">Lanjutkan materi yang sedang kamu pelajari</small></div></div>
+<div class="cont"><div class="th">🧑‍🏫</div><div><h3>Persamaan Linear Dua Variabel</h3><small>Matematika • Kelas 10</small><br><button class="sm" onclick="mDet(0);go('materi')">Lanjutkan Belajar →</button></div></div>
+<div class="mini"><div><b>⚡ Kuis Cepat</b><br><small style="color:var(--mut)">Uji kemampuanmu dengan kuis!</small><br><button class="sm" onclick="go('kuis')">Mulai Kuis →</button></div><span style="font-size:48px">📋</span></div>
+</div>
+
+<div class="card">
+<div class="sec-h"><h2 style="font-size:18px">📢 Informasi &amp; Beasiswa</h2><a href="#beasiswa">Lihat Semua →</a></div>
+<div class="bs"><i>🎓</i><span><b>Beasiswa Indonesia Maju</b><small>Kemdikbud</small><small>SMA / Kuliah</small></span><span class="dl">Deadline:<br>30 Sep 2026</span></div>
+<div class="bs"><i>🏛️</i><span><b>Beasiswa Prestasi</b><small>Universitas Indonesia</small><small>SMA / Kuliah</small></span><span class="dl">Deadline:<br>15 Okt 2026</span></div>
+<div class="bs"><i>🔥</i><span><b>Beasiswa LPDP</b><small>Kemenkeu RI</small><small>Kuliah</small></span><span class="dl">Deadline:<br>20 Nov 2026</span></div>
+<div class="tip">💡 <span>Masa depanmu dimulai dari langkah kecil hari ini.</span><button onclick="go('beasiswa')">Lihat Semua</button></div>
+</div>
+</section>
+</div></section>
+
+<main class="wrap">
+<section class="page" id="materi"></section>
+
+<section class="page" id="tugas">
+<h2 class="t">Tugas</h2><p class="sub">Catat tugas dan tandai kalau sudah selesai.</p>
+<div class="form">
+<input class="in" id="tn" placeholder="Nama tugas" aria-label="Nama tugas">
+<select class="in" id="tm" aria-label="Mata pelajaran"></select>
+<input class="in" id="td" type="date" aria-label="Deadline">
+<select class="in" id="tp" aria-label="Prioritas"><option>Rendah</option><option selected>Sedang</option><option>Tinggi</option></select>
+<button class="btn" id="ta">Tambah tugas</button>
+</div>
+<div class="fbar">
+<select class="in" id="tf" aria-label="Filter status"><option value="">Semua status</option><option value="0">Belum dikerjakan</option><option value="1">Sedang dikerjakan</option><option value="2">Selesai</option></select>
+<select class="in" id="ts" aria-label="Urutkan"><option value="d">Urutkan: deadline terdekat</option><option value="n">Urutkan: nama</option></select>
+</div>
+<div id="tl"></div>
+</section>
+
+<section class="page" id="kuis"></section>
+<section class="page" id="jadwal"></section>
+<section class="page" id="perpustakaan"></section>
+<section class="page" id="beasiswa"></section>
+<section class="page" id="profil"></section>
+
+</main>
+<footer><b>PelajarKu</b> &nbsp;—&nbsp; Satu Website untuk Semua Kebutuhan Pelajar</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
